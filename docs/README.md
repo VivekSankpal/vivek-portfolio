@@ -1,157 +1,132 @@
-# Vivek Sankpal --- Portfolio
+# Vivek Sankpal — Portfolio
 
-> Personal portfolio for Vivek Sankpal, an MCA student and aspiring
-> software developer.
+A responsive personal portfolio website showcasing my skills, education, and projects as an aspiring software developer and MCA student.
 
-## Project Status
+## 🌐 Live Website
 
-Planning and documentation are prepared. Website implementation,
-integrations, testing, and deployment are not yet complete.
+**[Visit My Portfolio](https://vivek-portfolio-8baabz9qd-vivek-portfolio4.vercel.app)**
 
-## Overview
+## ✨ Features
 
-The portfolio will present: - Home and About - Skills - Projects -
-Education - Certifications - Contact - Separate Privacy Policy and
-custom 404 page
+- Clean, modern, and responsive design
+- Personal introduction and profile section
+- Skills and technologies showcase
+- Projects section
+- Education and certifications sections
+- Contact form with submission feedback
+- Social links for GitHub and LinkedIn
+- Privacy Policy page
+- Custom 404 page
+- Back-to-Top button
+- Responsive navigation for different screen sizes
 
-The initial project showcased will be the Weather Safety App, marked
-**In Development**.
+## 🛠️ Technologies Used
 
-## Planned Technology Stack
+- **Frontend:** React.js
+- **Build Tool:** Vite
+- **Languages:** HTML, CSS, JavaScript
+- **Routing:** React Router
+- **Deployment:** Vercel
+- **Version Control:** Git and GitHub
+- **Development Tool:** Visual Studio Code
 
--   React
--   Vite
--   CSS
--   ESLint
--   Prettier
--   Git and GitHub
--   Formspree for contact form delivery (pending configuration)
--   Vercel for hosting (pending configuration)
+## 📂 Project Structure
 
-## Planned Folder Structure
-
-``` text
-vivek-portfolio/
+```text
+Vivek-Portfolio/
 ├── public/
 ├── src/
 │   ├── assets/
-│   ├── components/
-│   ├── sections/
-│   ├── pages/
-│   ├── styles/
-│   ├── tests/
+│   │   └── hero.png
 │   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
 │   └── main.jsx
-├── PRD.md
-├── architecture.md
-├── design.md
-├── README.md
-├── tracker.md
-├── rules.md
-└── memory.md
+├── docs/
+│   ├── PRD.md
+│   ├── README.md
+│   ├── architecture.md
+│   ├── design.md
+│   ├── memory.md
+│   ├── rules.md
+│   └── tracker.md
+├── .gitignore
+├── index.html
+├── package.json
+└── vite.config.js
 ```
 
-## Windows Setup (Planned Instructions)
+_Note: The structure above is a guide. Your actual files may differ._
 
-1.  Install or update Node.js only if required; use a supported LTS
-    version.
+## 🚀 Run Locally
 
-2.  Confirm Node.js and npm versions in PowerShell:
+### Prerequisites
 
-    ``` powershell
-    node -v
-    npm -v
-    ```
+- Node.js and npm
+- Git
+- Visual Studio Code (recommended)
 
-3.  Confirm Git is available:
+### Installation
 
-    ``` powershell
-    git --version
-    ```
+1. Clone the repository:
 
-4.  Open the project folder in VS Code.
+   ```bash
+   git clone https://github.com/VivekSankpal/vivek-portfolio.git
+   ```
 
-5.  After the React + Vite project has been created and its
-    `package.json` exists, install dependencies:
+2. Navigate to the project folder:
 
-    ``` powershell
-    npm install
-    ```
+   ```bash
+   cd vivek-portfolio
+   ```
 
-6.  Start the development server:
+3. Install dependencies:
 
-    ``` powershell
-    npm run dev
-    ```
+   ```bash
+   npm install
+   ```
 
-7.  Open the local URL shown in the terminal.
+4. Start the development server:
 
-These commands must be checked against the final generated project
-scripts; do not run them before the project is initialized.
+   ```bash
+   npm run dev
+   ```
 
-## Environment Configuration
+5. Open the local URL displayed in your terminal.
 
-The portfolio does not require a custom backend in the current plan.
-Formspree will be used for contact delivery after setup. - Obtain the
-real form endpoint from the user's Formspree account. - Configure it
-according to Formspree's current instructions. - Do not invent an
-endpoint or claim it is configured before the user completes setup. -
-Never commit private credentials, API keys, or private environment files
-to Git. - Client-side form endpoints are not secret credentials; follow
-provider guidance for secure configuration.
+### Production Build
 
-## Contact Information
+```bash
+npm run build
+```
 
--   Email: `viveksankpal22@gmail.com`
--   GitHub: https://github.com/VivekSankpal
--   LinkedIn: https://www.linkedin.com/in/vivek-sankpal-13a17b386
+## 📌 Featured Project
 
-## User Assets Needed
+### Weather Safety App
 
--   Profile photo
--   Resume PDF
--   Full Stack .NET Development certificate
+A weather safety application currently in development, intended to provide weather information and location-based safety recommendations.
 
-These files should be added only after the user supplies them. Do not
-invent file paths or placeholder URLs.
+## 🎓 Education
 
-## Quality Checklist
+**Master of Computer Applications (MCA)**  
+Sant Gajanan Maharaj College of Engineering, Mahagaon  
+Shivaji University, Kolhapur  
+Currently pursuing
 
--   Responsive desktop/tablet/mobile layouts.
--   Full keyboard accessibility and visible focus states.
--   Reduced-motion support.
--   Working internal navigation and genuine external links.
--   Contact form validation and real Formspree submission test.
--   Automated tests for important interactions.
--   Manual browser and mobile testing.
--   Production build.
--   Lighthouse audits for Performance, Accessibility, Best Practices,
-    and SEO.
--   Report only tests and results that have actually been verified.
+## 📜 Certification
 
-## Git Workflow
+- Full Stack .NET Development
 
--   Planned repository name: `vivek-portfolio`.
--   Planned initial branch: `main`.
--   Make a Git commit before significant changes.
--   After changes, run tests and production build.
--   Push to `main` after checks.
--   Never commit secrets or private credentials.
+## 📬 Contact
 
-## Vercel Deployment (Planned)
+- **GitHub:** [VivekSankpal](https://github.com/VivekSankpal)
+- **LinkedIn:** [Vivek Sankpal](https://www.linkedin.com/in/vivek-sankpal-13a17b386)
+- **Email:** [viveksankpal22@gmail.com](mailto:viveksankpal22@gmail.com)
 
-1.  Create the GitHub repository.
-2.  Push the project to `main`.
-3.  Connect the repository to Vercel.
-4.  Verify the build settings and production build.
-5.  Deploy and check the real deployment URL.
-6.  Configure a custom domain only after checking availability and cost.
+## 📄 License
 
-Preferred domain: `viveksankpal.com`. Its availability, purchase, and
-DNS configuration are not yet verified.
+This project is currently presented as a personal portfolio. Contact me before reusing substantial parts of the design or content.
 
-## Documentation Language
+---
 
-This README uses Marathi-friendly explanations with English technical
-terms in the broader documentation set. The public-facing website
-content will remain English-only.
+© 2026 Vivek Sankpal. All rights reserved.
