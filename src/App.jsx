@@ -97,22 +97,23 @@ function App() {
                     problem-solving, and building practical projects.
                   </p>
 
-                  <div className="hero-actions resume-actions">
-                    <button
-                      className="button button-secondary"
-                      type="button"
-                      onClick={() => alert("Please add your resume PDF first.")}
+                  <div className="resume-buttons">
+                    <a
+                      href="/resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary"
                     >
                       View Resume
-                    </button>
+                    </a>
 
-                    <button
-                      className="button button-secondary"
-                      type="button"
-                      onClick={() => alert("Please add your resume PDF first.")}
+                    <a
+                      href="/resume.pdf"
+                      download="Vivek-Sankpal-Resume.pdf"
+                      className="btn btn-secondary"
                     >
                       Download Resume
-                    </button>
+                    </a>
                   </div>
 
                   <div className="hero-tech">
@@ -284,25 +285,164 @@ function App() {
                   </div>
                 </article>
               </section>
+
               <section className="content-section" id="education">
                 <p className="section-label">MY LEARNING JOURNEY</p>
                 <h2>Education</h2>
-                <article className="simple-card">
-                  <h3>Master of Computer Applications (MCA)</h3>
-                  <p>Sant Gajanan Maharaj College Of Engineering, Mahagaon</p>
-                  <p>Shivaji University, Kolhapur</p>
-                  <span className="project-status">Currently Pursuing</span>
-                </article>
+                <p className="education-intro">
+                  My academic journey, qualifications, and achievements.
+                </p>
+
+                {[
+                  {
+                    id: "ssc",
+                    title: "10th — SSC",
+                    institution: "Shri Bhaveshwari Highschool Madyal",
+                    period: "2020",
+                    status: "Completed",
+                    score: 82.6,
+                    scoreLabel: "82.60%",
+                    scale: 100,
+                    description: "Secondary School Certificate (SSC).",
+                  },
+                  {
+                    id: "hsc",
+                    title: "12th — HSC",
+                    institution: "Gadhinglaj Junior College, Gadhinglaj",
+                    period: "2021 – 2022",
+                    status: "Completed",
+                    score: 66.67,
+                    scoreLabel: "66.67%",
+                    scale: 100,
+                    description:
+                      "Higher Secondary Certificate — Maharashtra State Board.",
+                  },
+                  {
+                    id: "bsc",
+                    title: "B.Sc. Computer Science",
+                    institution:
+                      "Shivraj College of Arts, Commerce and D. S. Kadam Science, Gadhinglaj",
+                    period: "2022 – 2025",
+                    status: "Completed",
+                    score: 8.08,
+                    scoreLabel: "8.08 CGPA",
+                    scale: 10,
+                    description: "Undergraduate degree in Computer Science.",
+                  },
+                  {
+                    id: "mca",
+                    title: "Master of Computer Applications (MCA)",
+                    institution:
+                      "Sant Gajanan Maharaj College of Engineering, Mahagaon",
+                    period: "2025 – 2027",
+                    status: "Currently Pursuing",
+                    score: null,
+                    scoreLabel: "Currently Pursuing",
+                    scale: null,
+                    description:
+                      "Affiliated with Shivaji University, Kolhapur.",
+                  },
+                ].map((item) => (
+                  <details className="education-card" key={item.id}>
+                    <summary className="education-card-summary">
+                      <div className="education-card-info">
+                        <span className="education-period">{item.period}</span>
+                        <h3>{item.title}</h3>
+                        <p className="education-institution">
+                          {item.institution}
+                        </p>
+                        <span className="project-status">{item.status}</span>
+                        <p className="education-visible-score">
+                          {item.scoreLabel}
+                        </p>
+                      </div>
+
+                      <span className="education-toggle" aria-hidden="true">
+                        +
+                      </span>
+                    </summary>
+
+                    <div className="education-details">
+                      <p>{item.description}</p>
+
+                      {item.score !== null ? (
+                        <div className="education-chart">
+                          <div className="education-chart-heading">
+                            <span>Academic Performance</span>
+                            <strong>{item.scoreLabel}</strong>
+                          </div>
+
+                          <div
+                            className="education-chart-track"
+                            role="img"
+                            aria-label={`${item.title}: ${item.scoreLabel}`}
+                          >
+                            <div
+                              className="education-chart-bar"
+                              style={{
+                                width: `${(item.score / item.scale) * 100}%`,
+                              }}
+                            />
+                          </div>
+
+                          <p className="education-chart-note">
+                            {item.scale === 10
+                              ? "CGPA shown on a 10-point scale."
+                              : "Percentage shown on a 100% scale."}
+                          </p>
+                        </div>
+                      ) : (
+                        <p className="education-chart-note"></p>
+                      )}
+                    </div>
+                  </details>
+                ))}
               </section>
+
               <section className="content-section" id="certifications">
-                <p className="section-label">COURSES & LEARNING</p>
-                <h2>Certifications</h2>
-                <article className="simple-card">
-                  <h3>Full Stack .NET Development</h3>
-                  <p>
-                    Certificate preview will be added when the certificate file
-                    is provided.
-                  </p>
+                <p className="section-label">MY ACHIEVEMENTS</p>
+                <h2>Certificates</h2>
+                <p className="education-intro">
+                  Certifications and practical learning achievements.
+                </p>
+
+                <article className="certificate-card">
+                  <div className="certificate-icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="32"
+                      height="32"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" />
+                      <path d="M14 3v5h5M9 13h6M9 17h6" />
+                    </svg>
+                  </div>
+
+                  <div className="certificate-content">
+                    <span className="certificate-tag">
+                      Internship Credential
+                    </span>
+                    <h3>Full Stack .NET Development</h3>
+                    <p>
+                      Completed an 8-week program covering C#, ASP.NET Core,
+                      Angular, Entity Framework Core, testing, and deployment.
+                    </p>
+                    <p className="certificate-date">Issued: June 11, 2026</p>
+
+                    <a
+                      href="/Full Stack .NET Development.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="certificate-view-button"
+                    >
+                      View Certificate <span aria-hidden="true">↗</span>
+                    </a>
+                  </div>
                 </article>
               </section>
 

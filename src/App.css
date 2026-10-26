@@ -1081,3 +1081,361 @@ a:focus-visible {
     transition: none;
   }
 }
+
+.resume-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.resume-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.resume-buttons a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.15);
+}
+
+@media (max-width: 480px) {
+  .resume-buttons a {
+    flex: 1;
+  }
+}
+
+/* Education Section */
+.education-intro {
+  color: #64748b;
+  margin: 0 0 24px;
+  line-height: 1.7;
+}
+
+.education-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.education-card:hover,
+.education-card[open] {
+  border-color: #2563eb;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.09);
+}
+
+.education-card-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.education-card-summary::-webkit-details-marker {
+  display: none;
+}
+
+.education-card-summary::marker {
+  content: "";
+}
+
+.education-card-summary:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: -3px;
+  border-radius: 12px;
+}
+
+.education-card-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.education-card-info h3 {
+  color: #0f172a;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.education-period {
+  display: inline-block;
+  color: #2563eb;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.education-institution {
+  color: #64748b;
+  line-height: 1.7;
+  margin: 0 0 12px;
+  overflow-wrap: anywhere;
+}
+
+.education-visible-score {
+  display: inline-block;
+  color: #2563eb;
+  font-weight: 700;
+  margin: 12px 0 0;
+  line-height: 1.5;
+}
+
+.education-toggle {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 1.5rem;
+  line-height: 1;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.education-card:hover .education-toggle,
+.education-card[open] .education-toggle {
+  background: #dbeafe;
+}
+
+.education-card[open] .education-toggle {
+  transform: rotate(45deg);
+}
+
+.education-details {
+  padding: 0 22px 24px;
+  border-top: 1px solid #e2e8f0;
+  animation: educationReveal 0.25s ease;
+}
+
+.education-details > p {
+  color: #475569;
+  line-height: 1.7;
+  margin: 18px 0;
+}
+
+.education-chart {
+  margin-top: 20px;
+  padding: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.education-chart-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.education-chart-heading strong {
+  color: #2563eb;
+  white-space: nowrap;
+}
+
+.education-chart-track {
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  background: #dbeafe;
+  border-radius: 999px;
+}
+
+.education-chart-bar {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 999px;
+  transition: width 0.7s ease;
+}
+
+.education-chart-note {
+  color: #64748b;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 12px 0 0;
+}
+
+@keyframes educationReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet and mobile responsive styles */
+@media (max-width: 480px) {
+  .education-card-summary {
+    padding: 18px;
+    gap: 12px;
+  }
+
+  .education-card-info h3 {
+    font-size: 1.05rem;
+  }
+
+  .education-institution {
+    font-size: 0.92rem;
+  }
+
+  .education-details {
+    padding: 0 18px 20px;
+  }
+
+  .education-chart {
+    padding: 15px;
+  }
+
+  .education-chart-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+/* Respect reduced-motion accessibility settings */
+@media (prefers-reduced-motion: reduce) {
+  .education-card,
+  .education-toggle,
+  .education-chart-bar {
+    transition: none;
+  }
+
+  .education-details {
+    animation: none;
+  }
+}
+
+/* Certificate Section */
+.certificate-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.certificate-card:hover {
+  border-color: #2563eb;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.09);
+}
+
+.certificate-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  color: #2563eb;
+  background: #eff6ff;
+  border-radius: 14px;
+}
+
+.certificate-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.certificate-tag {
+  display: inline-block;
+  padding: 6px 10px;
+  color: #1d4ed8;
+  background: #eff6ff;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.certificate-content h3 {
+  margin: 14px 0 10px;
+  color: #0f172a;
+  line-height: 1.5;
+}
+
+.certificate-content p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.certificate-date {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.certificate-view-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 12px 18px;
+  color: #ffffff;
+  background: #2563eb;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.certificate-view-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.certificate-view-button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .certificate-card {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .certificate-card,
+  .certificate-view-button {
+    transition: none;
+  }
+
+  .certificate-view-button:hover {
+    transform: none;
+  }
+}
