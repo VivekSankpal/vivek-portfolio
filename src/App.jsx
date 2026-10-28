@@ -90,11 +90,11 @@ function App() {
                     Hi, I’m <span>Vivek Sankpal</span>
                   </h1>
 
-                  <h2>Aspiring Software Developer</h2>
+                  <h2>Aspiring Web Developer</h2>
 
                   <p className="hero-description">
-                    Aspiring Software Developer focused on learning,
-                    problem-solving, and building practical projects.
+                    Aspiring Web Developer focused on learning, problem-solving,
+                    and building practical projects.
                   </p>
 
                   <div className="resume-buttons">
@@ -143,11 +143,11 @@ function App() {
 
                 <div className="about-layout">
                   <div className="about-text">
-                    <h3>Aspiring Software Developer</h3>
+                    <h3>Aspiring Web Developer</h3>
 
                     <p>
-                      I’m an MCA student passionate about software development
-                      and learning modern technologies. I enjoy exploring new
+                      I’m an MCA student passionate about web development and
+                      learning modern technologies. I enjoy exploring new
                       concepts, solving problems, and building practical
                       projects that help me improve my technical skills.
                     </p>
