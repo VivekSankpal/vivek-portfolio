@@ -1,4 +1,4 @@
-# Vivek Sankpal | Portfolio Website
+# Vivek Sankpal | Web Developer Portfolio
 
 A modern, responsive personal portfolio website showcasing my skills, education, and projects as a Web Developer and MCA student.
 
