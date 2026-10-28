@@ -1,55 +1,42 @@
 # Vivek Sankpal | Web Developer Portfolio
 
-A modern, responsive personal portfolio website showcasing my skills, education, and projects as a Web Developer and MCA student.
-
-🌐 **Live Portfolio:** [Visit My Portfolio](https://viveksankpal.vercel.app)
-
-## About the Project
-
-This portfolio highlights my technical skills, academic background, and development projects. It is designed to provide a clean, user-friendly experience across desktop and mobile devices.
-
-## Project Status
-
-🚧 In Development
+A responsive personal portfolio website showcasing my skills, education, and projects as a Web Developer and MCA student.
 
 ## 🌐 Live Website
 
-[**Visit My Portfolio**](https://viveksankpal.vercel.app)
-
-## 📸 Portfolio Preview
-
-Explore the live website: [viveksankpal.vercel.app](https://viveksankpal.vercel.app)
+[Visit My Portfolio](https://viveksankpal.vercel.app)
 
 ## ✨ Features
 
-- Responsive layout for desktop, tablet, and mobile
-- Personal introduction and profile photo
-- Skills and technologies section
-- Projects showcase
-- Education and certifications
+- Clean, modern, and responsive design
+- Personal introduction and profile section
+- Skills and technologies showcase
+- Projects section
+- Education and certifications sections
 - Contact form with submission feedback
-- GitHub and LinkedIn links
+- GitHub and LinkedIn social links
 - Privacy Policy page
 - Custom 404 page
 - Back-to-Top button
-- Client-side routing
+- Responsive navigation for different screen sizes
 
-## 🛠️ Built With
+## 🛠️ Technologies Used
 
-- React.js
-- JavaScript
-- HTML5
-- CSS3
-- Vite
-- React Router
-- Git and GitHub
-- Vercel
+- **Frontend:** React.js
+- **Build Tool:** Vite
+- **Languages:** HTML, CSS, JavaScript
+- **Routing:** React Router
+- **Deployment:** Vercel
+- **Version Control:** Git and GitHub
+- **Development Tool:** Visual Studio Code
 
-## 🚀 Getting Started
+## 🚀 Run Locally
 
 ### Prerequisites
 
-Install [Node.js](https://nodejs.org/) and npm before starting.
+- Node.js and npm
+- Git
+- Visual Studio Code (recommended)
 
 ### Installation
 
@@ -59,7 +46,7 @@ Install [Node.js](https://nodejs.org/) and npm before starting.
    git clone https://github.com/VivekSankpal/vivek-portfolio.git
    ```
 
-2. Open the project folder:
+2. Navigate to the project folder:
 
    ```bash
    cd vivek-portfolio
@@ -77,9 +64,9 @@ Install [Node.js](https://nodejs.org/) and npm before starting.
    npm run dev
    ```
 
-5. Open the local URL shown in the terminal.
+5. Open the local URL shown in your terminal.
 
-### Build for Production
+### Production Build
 
 ```bash
 npm run build
@@ -87,17 +74,16 @@ npm run build
 
 ## 📌 Featured Project
 
-### Weather Safety App — In Development
+### 🌦️ Weather Safety App
 
-A project in development focused on weather monitoring and location-based safety recommendations.
+A weather safety application currently in development, intended to provide weather information and location-based safety recommendations.
 
 ## 🎓 Education
 
-**Master of Computer Applications (MCA)**
+**Master of Computer Applications (MCA) — Currently Pursuing**
 
 Sant Gajanan Maharaj College of Engineering, Mahagaon  
-Affiliated with Shivaji University, Kolhapur  
-Currently pursuing
+Affiliated with Shivaji University, Kolhapur
 
 ## 📜 Certification
 
@@ -108,11 +94,10 @@ Currently pursuing
 - **GitHub:** [VivekSankpal](https://github.com/VivekSankpal)
 - **LinkedIn:** [Vivek Sankpal](https://www.linkedin.com/in/vivek-sankpal-13a17b386)
 - **Email:** [viveksankpal22@gmail.com](mailto:viveksankpal22@gmail.com)
-- **Portfolio:** [viveksankpal.vercel.app](https://viveksankpal.vercel.app)
 
 ## 📄 License
 
-This repository contains a personal portfolio project. Please contact me before reusing substantial portions of its design or content.
+This is a personal portfolio project. Please contact me before reusing substantial parts of its design or content.
 
 ---
 
