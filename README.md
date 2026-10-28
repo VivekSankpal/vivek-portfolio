@@ -1,6 +1,6 @@
 # Vivek Sankpal | Portfolio Website
 
-A modern, responsive personal portfolio website showcasing my skills, education, and projects as an aspiring software developer and MCA student.
+A modern, responsive personal portfolio website showcasing my skills, education, and projects as an aspiring Web developer and MCA student.
 
 🌐 **Live Portfolio:** [Visit My Portfolio](https://viveksankpal.vercel.app)
 
