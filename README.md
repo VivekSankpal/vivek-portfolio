@@ -4,13 +4,11 @@ A modern, responsive personal portfolio website showcasing my skills, education,
 
 ## 🌐 Live Website
 
-**[Visit My Portfolio](https://vivek-portfolio-8baabz9qd-vivek-portfolio4.vercel.app)**
+[**Visit My Portfolio**](https://viveksankpal.vercel.app)
 
 ## 📸 Portfolio Preview
 
-![Vivek Sankpal Portfolio](./public/portfolio-preview.png)
-
-**Live Website:** https://vivek-portfolio-8baabz9qd-vivek-portfolio4.vercel.app
+Live Website: https://viveksankpal.vercel.app
 
 ## ✨ Features
 
