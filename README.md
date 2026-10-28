@@ -2,13 +2,23 @@
 
 A modern, responsive personal portfolio website showcasing my skills, education, and projects as an aspiring software developer and MCA student.
 
+🌐 **Live Portfolio:** [Visit My Portfolio](https://viveksankpal.vercel.app)
+
+## About the Project
+
+This portfolio highlights my technical skills, academic background, and development projects. It is designed to provide a clean, user-friendly experience across desktop and mobile devices.
+
+## Project Status
+
+🚧 In Development
+
 ## 🌐 Live Website
 
 [**Visit My Portfolio**](https://viveksankpal.vercel.app)
 
 ## 📸 Portfolio Preview
 
-Live Website: https://viveksankpal.vercel.app
+Explore the live website: [viveksankpal.vercel.app](https://viveksankpal.vercel.app)
 
 ## ✨ Features
 
@@ -86,7 +96,7 @@ A project in development focused on weather monitoring and location-based safety
 **Master of Computer Applications (MCA)**
 
 Sant Gajanan Maharaj College of Engineering, Mahagaon  
-Shivaji University, Kolhapur  
+Affiliated with Shivaji University, Kolhapur  
 Currently pursuing
 
 ## 📜 Certification
@@ -97,7 +107,8 @@ Currently pursuing
 
 - **GitHub:** [VivekSankpal](https://github.com/VivekSankpal)
 - **LinkedIn:** [Vivek Sankpal](https://www.linkedin.com/in/vivek-sankpal-13a17b386)
-- **Email:** [Contact me](mailto:viveksankpal22@gmail.com)
+- **Email:** [viveksankpal22@gmail.com](mailto:viveksankpal22@gmail.com)
+- **Portfolio:** [viveksankpal.vercel.app](https://viveksankpal.vercel.app)
 
 ## 📄 License
 
